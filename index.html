@@ -521,6 +521,48 @@ h3 {
   }
 }
 
+.milestone {
+  background: var(--cream);
+  border-top: 1px solid var(--line);
+}
+
+.milestone-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(28px, 6vw, 80px);
+  align-items: start;
+}
+
+.milestone-list {
+  display: grid;
+  gap: 18px;
+}
+
+.milestone-item {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.milestone-item span {
+  color: var(--mocha);
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.milestone-item h3 {
+  margin: 0 0 8px;
+  font-family: "Noto Serif TC", serif;
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+}
+
+.milestone-item p {
+  margin: 0;
+  color: var(--muted);
+}
+
 .contact-details {
   display: flex;
   flex-wrap: wrap;
@@ -828,6 +870,15 @@ textarea {
     grid-template-columns: 1fr;
   }
 
+.milestone-grid {
+  grid-template-columns: 1fr;
+}
+
+.milestone-item {
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+
   .product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -884,7 +935,7 @@ textarea {
       </button>
       <nav class="site-nav" aria-label="主要導覽">
         <a href="#home">首頁</a>
-        <a href="#about">品牌介紹</a>
+        <a href="#about">品牌介紹</a>\n        <a href="#milestone">品牌里程碑</a>
         <a href="products.html">商品展示</a>
         <a href="courses.html">課程資訊</a>
         <a href="#contact">聯絡方式</a>
@@ -929,6 +980,38 @@ textarea {
           </figure>
         </div>
       </section>
+
+<section class="milestone section-band" id="milestone">
+  <div class="section-inner milestone-grid">
+    <div>
+      <p class="eyebrow">Milestone</p>
+      <h2>品牌里程碑</h2>
+    </div>
+    <div class="milestone-list">
+      <article class="milestone-item">
+        <span>01</span>
+        <div>
+          <h3>傳統信仰文化出發</h3>
+          <p>以紙藝創作重新詮釋祭祀文化，讓傳統作品保有溫度，也更貼近現代生活。</p>
+        </div>
+      </article>
+      <article class="milestone-item">
+        <span>02</span>
+        <div>
+          <h3>建立多元作品系統</h3>
+          <p>發展神明花藝、金紙藝術、祝壽花禮與祭祀紙藝，讓每份心意都能被細緻呈現。</p>
+        </div>
+      </article>
+      <article class="milestone-item">
+        <span>03</span>
+        <div>
+          <h3>投入課程教學傳承</h3>
+          <p>整理完整課程系統，陪伴零基礎學員循序漸進學習，延續紙藝工藝的美感與價值。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
 
       <section class="contact section-band" id="contact">
         <div class="section-inner contact-grid">
