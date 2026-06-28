@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amber花藝 | 奶茶色系質感花藝</title>
+    <meta
+      name="description"
+      content="Amber花藝以奶茶色系、自然線條與季節花材，提供質感花束、桌花、婚禮花藝與品牌花禮。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Amber花藝首頁">
+        <span class="brand-mark">A</span>
+        <span>Amber花藝</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="開啟選單" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="主要導覽">
+        <a href="#home">首頁</a>
+        <a href="#about">品牌介紹</a>
+        <a href="#products">商品展示</a>
+        <a href="#contact">聯絡方式</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <img class="hero-image" src="./assets/hero-amber-floral.png" alt="奶茶色系花藝作品與自然光氛圍" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Seasonal floral studio</p>
+          <h1>Amber花藝</h1>
+          <p class="hero-copy">
+            以季節花材、自然線條與細膩配色，為送禮、婚禮、品牌空間與日常片刻，設計剛剛好的花。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#products">瀏覽商品</a>
+            <a class="button secondary" href="#contact">聯絡我們</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section-band" id="about">
+        <div class="section-inner intro-grid">
+          <div>
+            <p class="eyebrow">Brand story</p>
+            <h2>品牌介紹</h2>
+          </div>
+          <div class="intro-copy">
+            <p>
+              Amber花藝以「大氣、簡約、溫柔」為設計核心，擅長以奶茶、米白、裸粉與淺棕色調，
+              呈現乾淨而有層次的花藝作品。
+            </p>
+            <p>
+              我們重視花材本身的姿態，保留枝葉的自然線條，讓每一束花都能安靜地承載心意，
+              適合送禮、空間佈置、婚禮與品牌活動。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="products" id="products">
+        <div class="section-inner">
+          <div class="section-heading split">
+            <div>
+              <p class="eyebrow">Products</p>
+              <h2>商品展示</h2>
+            </div>
+            <p>以日常送禮與重要時刻為主軸，提供可客製的花束、花盒、桌花與婚禮花藝。</p>
+          </div>
+          <div class="product-grid">
+            <article class="product-card product-one">
+              <div class="product-visual"></div>
+              <div class="product-content">
+                <span>01</span>
+                <h3>奶茶色花束</h3>
+                <p>適合生日、紀念日與日常送禮，可依預算調整尺寸與花材。</p>
+              </div>
+            </article>
+            <article class="product-card product-two">
+              <div class="product-visual"></div>
+              <div class="product-content">
+                <span>02</span>
+                <h3>質感花盒</h3>
+                <p>低調精緻的禮盒設計，適合節慶、品牌贈禮與正式場合。</p>
+              </div>
+            </article>
+            <article class="product-card product-three">
+              <div class="product-visual"></div>
+              <div class="product-content">
+                <span>03</span>
+                <h3>桌花佈置</h3>
+                <p>為餐桌、接待櫃台與活動空間增加柔和而穩定的視覺焦點。</p>
+              </div>
+            </article>
+            <article class="product-card product-four">
+              <div class="product-visual"></div>
+              <div class="product-content">
+                <span>04</span>
+                <h3>婚禮花藝</h3>
+                <p>捧花、胸花與場地花藝，依整體色調規劃簡約大氣的儀式感。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-band" id="contact">
+        <div class="section-inner contact-grid">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>聯絡方式</h2>
+            <p>
+              留下你需要的日期、場合與預算，我們會協助確認花材方向與取花方式。
+              急件可先透過電話或社群私訊確認。
+            </p>
+            <div class="contact-details">
+              <a href="mailto:hello@amberfloral.example">hello@amberfloral.example</a>
+              <a href="tel:+886212345678">02-1234-5678</a>
+              <span>台北市中山區花徑路 18 號</span>
+            </div>
+          </div>
+          <form class="contact-form">
+            <label>
+              姓名
+              <input type="text" name="name" placeholder="請輸入姓名" />
+            </label>
+            <label>
+              需求
+              <select name="service">
+                <option>客製花束</option>
+                <option>質感花盒</option>
+                <option>桌花佈置</option>
+                <option>婚禮花藝</option>
+              </select>
+            </label>
+            <label>
+              日期
+              <input type="date" name="date" />
+            </label>
+            <label>
+              備註
+              <textarea name="message" rows="4" placeholder="場合、預算、偏好色系"></textarea>
+            </label>
+            <button class="button primary" type="submit">送出需求</button>
+            <p class="form-note" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Amber花藝</span>
+      <span>Seasonal flowers for meaningful days.</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
