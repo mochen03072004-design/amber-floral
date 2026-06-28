@@ -6,7 +6,7 @@
     <title>商品展示 | Amber花藝</title>
     <meta
       name="description"
-      content="Amber花藝商品展示，提供祝壽蛋糕、一桶金、滿願籃、財寶箱等花藝與紙藝設計作品。"
+      content="Amber花藝商品展示，提供祝壽蛋糕、一桶金、滿願籃、財寶箱、好神花等花藝與紙藝設計作品。"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -373,6 +373,20 @@ h3 {
 
 .product-four .product-visual {
   background: linear-gradient(135deg, #e9d9ca, #a78971);
+}
+
+.product-five .product-visual {
+  background: linear-gradient(135deg, #ead7ca, #b88e76);
+}
+
+.product-placeholder::after {
+  content: "照片待補";
+  display: grid;
+  place-items: center;
+  height: 260px;
+  color: var(--mocha);
+  font-weight: 800;
+  letter-spacing: 0;
 }
 
 .courses {
@@ -827,6 +841,15 @@ textarea {
                 <button class="cart-add" type="button" data-product="財寶箱">加入購物車</button>
               </div>
             </article>
+            <article class="product-card product-five">
+              <div class="product-visual product-placeholder" aria-label="好神花作品照片待補"></div>
+              <div class="product-content">
+                <span>05</span>
+                <h3>好神花</h3>
+                <p>適合敬神、祝福與重要儀式場合，以層次紙藝與鮮明色彩呈現滿滿心意。</p>
+                <button class="cart-add" type="button" data-product="好神花">加入購物車</button>
+              </div>
+            </article>
           </div>
         </div>
       </section>
@@ -848,7 +871,7 @@ textarea {
       </div>
       <ul class="cart-items"></ul>
       <p class="cart-empty">目前購物車是空的。</p>
-      <a class="cart-line button primary" href="https://lin.ee/tE6FTPI" target="_blank" rel="noopener noreferrer">用 LINE 詢問</a>
+      <a class="cart-line button primary" href="https://lin.ee/ZXTWVOT" target="_blank" rel="noopener noreferrer">用 LINE 詢問</a>
     </aside>
 
     <button class="back-to-top" type="button" aria-label="回到最上方">↑</button>
