@@ -410,6 +410,90 @@ h3 {
   margin-bottom: 0;
 }
 
+/* Courses standalone page */
+.courses-page {
+  padding-top: 92px;
+  background: var(--paper);
+}
+
+.courses-page .courses {
+  min-height: 100vh;
+  border-top: 0;
+}
+
+.courses-page .course-grid {
+  grid-template-columns: 1fr;
+  gap: 34px;
+}
+
+.courses-page .course-list {
+  gap: 22px;
+}
+
+.courses-page .course-item {
+  display: grid;
+  grid-template-columns: minmax(220px, 360px) minmax(0, 1fr);
+  gap: 22px 28px;
+  align-items: start;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 250, 243, 0.72);
+  box-shadow: 0 14px 34px rgba(74, 56, 44, 0.08);
+}
+
+.courses-page .course-item:first-child {
+  padding-top: 24px;
+}
+
+.courses-page .course-item > span,
+.courses-page .course-item > h3,
+.courses-page .course-item > p,
+.courses-page .course-item > ul {
+  grid-column: 2;
+}
+
+.courses-page .course-photo {
+  grid-column: 1;
+  grid-row: 1 / span 8;
+  margin: 0;
+  aspect-ratio: 4 / 3;
+}
+
+.courses-page .course-item.no-photo {
+  grid-template-columns: 1fr;
+}
+
+.courses-page .course-item.no-photo > span,
+.courses-page .course-item.no-photo > h3,
+.courses-page .course-item.no-photo > p,
+.courses-page .course-item.no-photo > ul {
+  grid-column: 1;
+}
+
+@media (max-width: 760px) {
+  .courses-page {
+    padding-top: 78px;
+  }
+
+  .courses-page .course-item {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .courses-page .course-photo,
+  .courses-page .course-item > span,
+  .courses-page .course-item > h3,
+  .courses-page .course-item > p,
+  .courses-page .course-item > ul {
+    grid-column: 1;
+  }
+
+  .courses-page .course-photo {
+    grid-row: auto;
+  }
+}
+
 .contact-details {
   display: flex;
   flex-wrap: wrap;
@@ -775,7 +859,7 @@ textarea {
         <a href="index.html#home">首頁</a>
         <a href="index.html#about">品牌介紹</a>
         <a href="products.html">商品展示</a>
-        <a href="index.html#courses">課程資訊</a>
+        <a href="courses.html">課程資訊</a>
         <a href="index.html#contact">聯絡方式</a>
       </nav>
     </header>
