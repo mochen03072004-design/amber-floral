@@ -371,11 +371,30 @@ h3 {
 }
 
 .contact-details {
-  display: grid;
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
   margin-top: 26px;
   color: var(--coffee);
   font-weight: 800;
+}
+
+.social-button {
+  display: inline-flex;
+  min-width: 92px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--cream);
+  color: var(--coffee);
+  box-shadow: none;
+}
+
+.social-button:hover {
+  background: var(--coffee);
+  color: var(--cream);
 }
 
 .contact-form {
@@ -684,12 +703,12 @@ textarea {
             <h2>聯絡方式</h2>
             <p>
               留下你需要的日期、場合與預算，我們會協助確認花材方向與取花方式。
-              急件可先透過電話或社群私訊確認。
+              急件可先透過社群私訊確認。
             </p>
             <div class="contact-details">
-              <a href="mailto:hello@amberfloral.example">hello@amberfloral.example</a>
-              <a href="tel:+886212345678">02-1234-5678</a>
-              <span>台北市中山區花徑路 18 號</span>
+              <a class="social-button" href="https://www.facebook.com/share/1J3grddCtP/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="前往 Amber花藝 Facebook">FB</a>
+              <a class="social-button" href="https://www.instagram.com/amber_flower__?igsh=MWNydzZ6NzV6OWVkbg%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="前往 Amber花藝 Instagram">IG</a>
+              <a class="social-button" href="https://lin.ee/tE6FTPI" target="_blank" rel="noopener noreferrer" aria-label="加入 Amber花藝 LINE">LINE</a>
             </div>
           </div>
           <form class="contact-form">
