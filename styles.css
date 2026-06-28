@@ -239,7 +239,8 @@ h3 {
 }
 
 .intro-grid,
-.contact-grid {
+.contact-grid,
+.course-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
   gap: clamp(32px, 7vw, 92px);
@@ -252,6 +253,7 @@ h3 {
 }
 
 .intro p,
+.courses p,
 .contact p,
 .section-heading p {
   color: var(--muted);
@@ -315,6 +317,36 @@ h3 {
 
 .product-four .product-visual {
   background: linear-gradient(135deg, #e9d9ca, #a78971);
+}
+
+.courses {
+  border-top: 1px solid var(--line);
+}
+
+.course-list {
+  display: grid;
+  gap: 14px;
+}
+
+.course-item {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.course-item:first-child {
+  padding-top: 0;
+}
+
+.course-item span {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--mocha);
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.course-item p {
+  margin-bottom: 0;
 }
 
 .contact-details {
@@ -419,6 +451,7 @@ textarea {
 
   .intro-grid,
   .contact-grid,
+  .course-grid,
   .section-heading.split {
     grid-template-columns: 1fr;
   }
