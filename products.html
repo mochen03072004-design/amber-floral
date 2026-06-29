@@ -586,6 +586,23 @@ textarea {
   transform: translateY(-2px);
 }
 
+.product-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.product-options .cart-add {
+  width: 100%;
+  margin-top: 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.92rem;
+  line-height: 1.35;
+}
+
 .cart-float {
   position: fixed;
   right: 24px;
@@ -891,7 +908,16 @@ textarea {
                 <span>02</span>
                 <h3>一桶金</h3>
                 <p>適合祝壽、開運與信仰祝福場合，可依需求搭配尺寸與祝福主題。</p>
-                <button class="cart-add" type="button" data-product="一桶金">加入購物車</button>
+                <div class="product-options" aria-label="一桶金款式選擇">
+                  <button class="cart-add" type="button" data-product="一桶金｜小款 1個 $380">小款 1個<br>$380</button>
+                  <button class="cart-add" type="button" data-product="一桶金｜小款 1對（2個） $700">小款 1對（2個）<br>$700</button>
+                  <button class="cart-add" type="button" data-product="一桶金｜中款 1個 $580">中款 1個<br>$580</button>
+                  <button class="cart-add" type="button" data-product="一桶金｜中款 1對（2個） $1000">中款 1對（2個）<br>$1000</button>
+                  <button class="cart-add" type="button" data-product="一桶金｜大款 1個 $1080">大款 1個<br>$1080</button>
+                  <button class="cart-add" type="button" data-product="一桶金｜大款 1對（2個） $2000">大款 1對（2個）<br>$2000</button>
+                  <button class="cart-add" type="button" data-product="一桶金｜巨無霸 1個 $2280">巨無霸 1個<br>$2280</button>
+                  <button class="cart-add" type="button" data-product="一桶金｜巨無霸 1對（2個） $4000">巨無霸 1對（2個）<br>$4000</button>
+                </div>
               </div>
             </article>
             <article class="product-card product-three">
